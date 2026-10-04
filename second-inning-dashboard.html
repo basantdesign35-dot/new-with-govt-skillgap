@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Inning Dashboard | SkillGap AI</title>
+    <meta name="description" content="Your SkillGap AI Second Inning dashboard: match score, skill gaps and a 6-week government to corporate plan." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://skillgapai.in/second-inning-dashboard.html" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SkillGap AI home"><img src="logo.png" alt="SkillGap AI" /></a>
+      <nav class="nav-links" aria-label="Primary"><a href="about.html">About</a><a href="students.html">Students</a><a href="institutions.html">Colleges</a><a href="employers.html">Employers</a><a href="second-inning.html">Second Inning</a><a href="contact.html">Contact</a></nav>
+      <div class="header-actions"><a class="login-link" href="login.html">Login</a><a class="primary-button small" href="index.html#assessment">Get my roadmap</a></div>
+    </header>
+    <main>
+      <section class="section-shell" id="siEmpty" hidden>
+        <div class="page-hero" style="padding-block:24px 0"><p class="eyebrow">Second Inning dashboard</p><h1>No profile found in this browser.</h1><p>Create your profile first, then your dashboard appears here.</p></div>
+        <a class="primary-button" href="second-inning-login.html">Create my profile</a>
+      </section>
+
+      <div id="siDashboard" hidden>
+        <section class="result-hero section-shell" style="padding-bottom:0">
+          <p class="eyebrow">Second Inning dashboard</p>
+          <h1 id="siWelcome">Welcome.</h1>
+          <div class="meta-chips" id="siMeta"></div>
+          <p class="notice">Guidance only — not a job guarantee. Serving employees should check their service conduct rules before taking a private role.</p>
+        </section>
+
+        <section class="section-shell" style="padding-block:24px 0">
+          <div class="stat-row" style="padding:0">
+            <div class="stat"><span>Match score</span><strong id="siScore">0%</strong><small>Your readiness for the target role</small></div>
+            <div class="stat"><span>Skills you have</span><strong id="siHaveCount">0</strong><small>Already transferable</small></div>
+            <div class="stat"><span>Gaps to close</span><strong id="siGapCount">0</strong><small>Focus areas for the plan</small></div>
+            <div class="stat"><span>Progress</span><strong id="siProgress">0 of 5 steps done</strong><div class="progress" style="margin-top:10px"><i id="siProgressBar" style="width:0"></i></div></div>
+          </div>
+        </section>
+
+        <section class="result-hero section-shell" style="padding-block:40px 0">
+          <div class="gap-grid">
+            <div class="gap-col"><h3>Strengths from your service</h3><ul id="siStrengths"></ul></div>
+            <div class="gap-col"><h3>Already transferable</h3><ul id="siHave"></ul></div>
+            <div class="gap-col build"><h3>Skills to build</h3><ul id="siGaps"></ul></div>
+            <div class="gap-col build"><h3>Your checklist</h3><div id="siChecklist" class="check-list-si"></div></div>
+          </div>
+        </section>
+
+        <section class="result-section section-shell" style="padding-bottom:0">
+          <h2>Your 6-week plan</h2>
+          <div class="timeline" id="siWeeks"></div>
+        </section>
+
+        <section class="section-shell result-actions">
+          <a class="primary-button" id="siWhatsApp" href="#" target="_blank" rel="noopener">Get a personal review on WhatsApp</a>
+          <a class="secondary-button" href="second-inning-login.html">Edit profile</a>
+          <button class="secondary-button" id="siSignOut" type="button">Sign out</button>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div><a class="brand" href="index.html"><img src="logo.png" alt="SkillGap AI" /></a><p>Turning skill gaps into growth.</p></div>
+      <div class="footer-columns">
+        <nav><strong>Company</strong><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a></nav>
+        <nav><strong>Explore</strong><a href="students.html">Students</a><a href="institutions.html">Colleges</a><a href="employers.html">Employers</a><a href="second-inning.html">Second Inning</a></nav>
+        <nav><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a><a href="refund.html">Refunds</a></nav>
+      </div>
+      <p class="copyright">© 2026 SkillGap AI. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="second-inning.js"></script>
+  </body>
+</html>

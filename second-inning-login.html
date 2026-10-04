@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Inning Login / Profile | SkillGap AI</title>
+    <meta name="description" content="Create or open your SkillGap AI Second Inning profile for government to corporate career transition." />
+    <link rel="canonical" href="https://skillgapai.in/second-inning-login.html" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SkillGap AI home"><img src="logo.png" alt="SkillGap AI" /></a>
+      <nav class="nav-links" aria-label="Primary"><a href="about.html">About</a><a href="students.html">Students</a><a href="institutions.html">Colleges</a><a href="employers.html">Employers</a><a href="second-inning.html">Second Inning</a><a href="contact.html">Contact</a></nav>
+      <div class="header-actions"><a class="login-link" href="login.html">Login</a><a class="primary-button small" href="index.html#assessment">Get my roadmap</a></div>
+    </header>
+    <main>
+      <section class="auth-shell section-shell">
+        <div>
+          <p class="eyebrow">Second Inning account</p>
+          <h1>Create your transition profile.</h1>
+          <p>Tell us where you are and where you want to go. Your dashboard shows your match score, skill gaps and a 6-week plan.</p>
+          <p class="microcopy">Demo account: saved in this browser (and in the database if connected). No password is collected.</p>
+          <form class="control-panel" id="siSignin" style="margin-top:24px">
+            <strong>Already created a profile?</strong>
+            <label for="siSigninEmail">Email</label>
+            <input id="siSigninEmail" name="email" type="email" placeholder="you@example.com" required />
+            <button class="secondary-button" type="submit">Open my dashboard</button>
+            <p class="microcopy" id="siSigninStatus"></p>
+          </form>
+        </div>
+        <form class="control-panel" id="siSignup">
+          <label for="siName">Name</label>
+          <input id="siName" name="name" type="text" placeholder="Your name" required />
+          <label for="siEmail">Email</label>
+          <input id="siEmail" name="email" type="email" placeholder="you@example.com" required />
+          <label for="siPhone">Phone</label>
+          <input id="siPhone" name="phone" type="tel" placeholder="+91..." />
+          <label for="siBackground">Current / last government background</label>
+          <select id="siBackground" name="background" required><option value="" disabled selected>Select background</option></select>
+          <label for="siTarget">Target corporate role</label>
+          <select id="siTarget" name="target" required><option value="" disabled selected>Select target role</option></select>
+          <label for="siYears">Years of service</label>
+          <select id="siYears" name="years"><option value="">Select</option><option>Under 5 years</option><option>5–10 years</option><option>10–20 years</option><option>20+ years</option></select>
+          <label for="siStatus">Where are you now?</label>
+          <select id="siStatus" name="status"><option value="">Select</option><option>Still in service, exploring</option><option>Planning to leave within a year</option><option>Taken VRS / resigned</option><option>Retired</option></select>
+          <button class="primary-button" type="submit">Create profile &amp; open dashboard</button>
+          <p class="microcopy" id="siSignupStatus"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div><a class="brand" href="index.html"><img src="logo.png" alt="SkillGap AI" /></a><p>Turning skill gaps into growth.</p></div>
+      <div class="footer-columns">
+        <nav><strong>Company</strong><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a></nav>
+        <nav><strong>Explore</strong><a href="students.html">Students</a><a href="institutions.html">Colleges</a><a href="employers.html">Employers</a><a href="second-inning.html">Second Inning</a></nav>
+        <nav><strong>Legal</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a><a href="refund.html">Refunds</a></nav>
+      </div>
+      <p class="copyright">© 2026 SkillGap AI. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="second-inning.js"></script>
+  </body>
+</html>
